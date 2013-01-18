@@ -7,3 +7,18 @@
 % and negative bounds                                                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%array declarations
+integer array1[3] %positive bounds
+integer array2[5 .. 7] %positive bounds
+integer array3[-3 .. -1] %negative bounds
+
+array1[1] := 1 
+array1[2] := 3 
+array1[3] := -4
+array2[5] := 15
+array2[6] := -2
+array2[7] := -6
+array3[-3] := 45
+array3[-2] := 7
+array3[-1] := 8
+
