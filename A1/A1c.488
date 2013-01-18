@@ -7,8 +7,10 @@
 % multi-level exits                                                    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-integer number
+begin 
 
+
+integer number
 
 number = 0
 loop
@@ -40,13 +42,4 @@ loop
 	pool
 pool
 
-
-
-
-
-
-
-
-
-
-
+end
