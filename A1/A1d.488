@@ -7,3 +7,18 @@
 % parameters                                                           %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+integer get5() begin
+	result 5
+end
+
+integer add1(integer x) begin
+	result (x + 1)
+end
+
+proc printTrue() begin
+	put true
+end
+
+proc printInteger(integer toPrint) begin
+	put toPrint
+end
