@@ -6,24 +6,26 @@
 % Uses all arithmetic, logical, and comparison operators               %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-integer a;
-integer b;
-integer c;
-integer d;
+begin % main program
 
-a := 1;
-b := -2;
-d := 5;
+integer a
+integer b
+integer c
+integer d
 
-c := a * b; % c = -2
-put c; % expect '-2'
-d := 5 / d; % d = 1
-put d; % expect '1'
+a := 1
+b := -2
+d := 5
 
-a := d + c; % a = 1 + (-2) = -1
-put a; % expect '-1'
-d := b - a; % d = (-2) - (-1) = -2 + 1 = -1
-put d; % expect '-1'
+c := a * b % c = -2
+put c % expect '-2'
+d := 5 / d % d = 1
+put d % expect '1'
+
+a := d + c % a = 1 + (-2) = -1
+put a % expect '-1'
+d := b - a % d = (-2) - (-1) = -2 + 1 = -1
+put d % expect '-1'
 
 if (3 = 3)
 	put true
@@ -90,3 +92,5 @@ if (false | false)
 else
 	put true
 fi
+
+end % main program
