@@ -27,7 +27,7 @@ begin % main program
 
 put get5() % expect '5'
 put add1(1) % expect '2'
-printTrue % expect 'true'
+printTrue() % expect 'true'
 printInteger(1) % expect '1'
 
 end % end program
