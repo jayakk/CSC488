@@ -8,3 +8,56 @@
 % declaration                                                          %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+begin
+
+
+integer fib( integer n )
+begin
+	integer x
+	forward printInt
+	if n <= 1 then result n fi
+	x = fib(n-1) + fib(n-2)
+	printInt(x) 
+	result x
+end
+
+proc printInt(integer x)
+begin
+	put x
+end
+
+
+proc printFib( integer n )
+begin
+	integer x
+	if n <= 1 then put n return fi
+	put ( fib(n-1) + fib(n-2) )
+	return
+end
+
+
+proc waitForFive()
+begin
+	integer x
+	get x
+	if x = 5 then return fi
+	waitForFive()
+	return
+end
+
+
+integer waitForSize()
+begin
+	integer x
+	get x
+	if x = 6 then result 6 fi
+	result waitForSize()
+end
+
+
+fib(10)
+waitForFive()
+waitForSize()
+
+
+end
