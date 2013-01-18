@@ -7,3 +7,46 @@
 % multi-level exits                                                    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+integer number
+
+
+number = 0
+loop
+	if !(number <= 100) then exit fi
+	put number
+	number = number + 2
+pool
+
+
+number := 0
+loop
+	exit when !(number <= 100)
+	put number
+	number = number + 2
+pool
+
+loop
+	loop
+		exit 2
+		put false
+	pool
+pool
+
+
+loop
+	loop
+		exit 2 when 1 = 1
+		put false
+	pool
+pool
+
+
+
+
+
+
+
+
+
+
+
