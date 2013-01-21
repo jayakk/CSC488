@@ -9,18 +9,24 @@
 
 begin % main program
 
+% Function without arguments
+% Returns 5
 integer get5() begin
 	result 5
 end
 
+% Function with arguments
+% Returns 1 + input
 integer add1(integer x) begin
 	result (x + 1)
 end
 
+% Procedure without arguments
 proc printTrue() begin
 	put true
 end
 
+% Procedure with arguments
 proc printInteger(integer toPrint) begin
 	put toPrint
 end

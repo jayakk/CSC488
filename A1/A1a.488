@@ -27,6 +27,9 @@ put a % expect '-1'
 d := b - a % d = (-2) - (-1) = -2 + 1 = -1
 put d % expect '-1'
 
+% Test all logical statements
+% Expect only 'true' to be printed
+% Seeing a 'false' is bad!
 if (3 = 3) then
 	put true
 else

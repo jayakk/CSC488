@@ -11,6 +11,7 @@ begin %main program
 
 integer number
 
+% Loop with normal 'exit'
 number := 0
 loop
 	if !(number <= 100) then exit fi
@@ -18,7 +19,7 @@ loop
 	number = number + 2
 pool
 
-
+% Loop with 'exit when'
 number := 0
 loop
 	exit when !(number <= 100)
@@ -26,6 +27,7 @@ loop
 	number = number + 2
 pool
 
+% Loop with multilevel exit: 'exit n'
 loop
 	loop
 		exit 2
@@ -33,7 +35,7 @@ loop
 	pool
 pool
 
-
+% Loop with multilevel exit: 'exit n when'
 loop
 	loop
 		exit 2 when 1 = 1

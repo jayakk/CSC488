@@ -10,6 +10,9 @@
 
 begin % main program
 
+% Recursive function with arguments and forward declaration
+%  Returns fib number n (and prints intermediate results,
+%  possibly out of order)
 integer fib(integer n) begin
 	integer x
 	forward printInt
@@ -19,10 +22,13 @@ integer fib(integer n) begin
 	result x
 end
 
+% Dummy function
 proc printInt(integer x) begin
 	put x
 end
 
+% Recursive procedure with arguments
+%  Prints fib numbers (might be out of order)
 proc printFib(integer n) begin
 	integer x
 	if n <= 1 then put n return fi
@@ -30,6 +36,8 @@ proc printFib(integer n) begin
 	return
 end
 
+% Recursive procedure without arguments
+%  Waits for an input of 5 and then returns 5
 proc waitForFive() begin
 	integer x
 	get x
@@ -38,6 +46,8 @@ proc waitForFive() begin
 	return
 end
 
+% Recursive function without arguments
+%  Waits for an input of 6 and then returns 6
 integer waitForSize() begin
 	integer x
 	get x
