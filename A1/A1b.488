@@ -1,11 +1,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CSC488S 2013 Assignment 1 part b                                     %
-% Group Number: xx                                                     %
+% Group Number: c488h07                                                %
 % This program is meant to use/test a portion of the CSC488            %
 % toy language functionality:                                          %
 % Using arrays including both forms of array declaration, positive     %
 % and negative bounds                                                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+begin % main program
 
 %array declarations
 integer array1[3] %positive bounds
@@ -22,3 +24,4 @@ array3[-3] := 45
 array3[-2] := 7
 array3[-1] := 8
 
+end % main program

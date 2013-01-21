@@ -1,11 +1,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CSC488S 2013 Assignment 1 part d                                     %
-% Group Number: xx                                                     %
+% Group Number: c488h07                                                %
 % This program is meant to use/test a portion of the CSC488            %
 % toy language functionality:                                          %
 % Uses non-recursive functions and procedures with and without         %
 % parameters                                                           %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+begin % main program
 
 integer get5() begin
 	result 5
@@ -22,8 +24,6 @@ end
 proc printInteger(integer toPrint) begin
 	put toPrint
 end
-
-begin % main program
 
 put get5() % expect '5'
 put add1(1) % expect '2'

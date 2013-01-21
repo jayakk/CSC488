@@ -1,18 +1,17 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CSC488S 2013 Assignment 1 part c                                     %
-% Group Number: xx                                                     %
+% Group Number: c488h07                                                %
 % This program is meant to use/test a portion of the CSC488            %
 % toy language functionality:                                          %
 % Uses all forms of loop building and exit constructs including        %
 % multi-level exits                                                    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-begin 
-
+begin %main program
 
 integer number
 
-number = 0
+number := 0
 loop
 	if !(number <= 100) then exit fi
 	put number
@@ -30,7 +29,7 @@ pool
 loop
 	loop
 		exit 2
-		put false
+		put false % shouldn't get here
 	pool
 pool
 
@@ -38,8 +37,8 @@ pool
 loop
 	loop
 		exit 2 when 1 = 1
-		put false
+		put false % shouldn't get here
 	pool
 pool
 
-end
+end % main program

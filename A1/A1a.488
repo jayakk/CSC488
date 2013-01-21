@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CSC488S 2013 Assignment 1 part a                                     %
-% Group Number: xx                                                     %
+% Group Number: c488h07                                                %
 % This program is meant to use/test a portion of the CSC488            %
 % toy language functionality:                                          %
 % Uses all arithmetic, logical, and comparison operators               %
@@ -27,67 +27,67 @@ put a % expect '-1'
 d := b - a % d = (-2) - (-1) = -2 + 1 = -1
 put d % expect '-1'
 
-if (3 = 3)
+if (3 = 3) then
 	put true
 else
 	put false
 fi
 
-if (3 != 4)
+if (3 != 4) then
 	put true
 else
 	put false
 fi
 
-if (3 < 4)
+if (3 < 4) then
 	put true
 else
 	put false
 fi
 
-if (3 <= 4)
+if (3 <= 4) then
 	put true
 else
 	put false
 fi
 
-if (3 > 4)
+if (3 > 4) then
 	put false
 else
 	put true
 fi
 
-if (3 >= 4)
+if (3 >= 4) then
 	put false
 else
 	put true
 fi
 
-if (true & true)
+if (true & true) then
 	put true
 else
 	put false
 fi
 
-if (true & false)
+if (true & false) then
 	put false
 else
 	put true
 fi
 
-if (true | true)
+if (true | true) then
 	put true
 else
 	put false
 fi
 
-if (true | false)
+if (true | false) then
 	put true
 else
 	put false
 fi
 
-if (false | false)
+if (false | false) then
 	put false
 else
 	put true
