@@ -37,7 +37,7 @@ end
 proc printLess(integer n) begin
 	if n < 0 then return fi
 	put n
-	printLess(n)
+	printLess(n - 1)
 	return
 end
 
