@@ -61,7 +61,7 @@ integer waitForSix() begin
 end
 
 put fib(10)
-printFib(10)
+printLess(10)
 waitForFive()
 put waitForSix()
 
