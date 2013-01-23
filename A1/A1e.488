@@ -12,12 +12,16 @@ begin % main program
 
 forward proc printInt(integer x)
 
-% Recursive function with arguments and forward declaration
+% Recursive function with arguments and uses forward
+% declaration as well as declares its own (useless) function
 %  Returns fib number n (and prints intermediate results,
 %  possibly out of order)
 integer fib(integer n) begin
     integer x
-	if n <= 1 then result n fi
+    integer getN(integer n) begin
+		result n
+    end
+	if n <= 1 then printInt(1) result getN(1) fi
 	x = fib(n-1) + fib(n-2)
 	printInt(x) 
 	result x
