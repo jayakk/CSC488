@@ -33,11 +33,11 @@ proc printInt(integer x) begin
 end
 
 % Recursive procedure with arguments
-%  Prints fib numbers (might be out of order)
-proc printFib(integer n) begin
-	integer x
-	if n <= 1 then put n return fi
-	put ( fib(n-1) + fib(n-2) )
+%  Prints all non-negative numbers less than the argument
+proc printLess(integer n) begin
+	if n < 0 then return fi
+	put n
+	printLess(n)
 	return
 end
 
