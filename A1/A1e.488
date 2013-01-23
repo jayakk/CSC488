@@ -18,8 +18,8 @@ forward proc printInt(integer x)
 %  possibly out of order)
 integer fib(integer n) begin
     integer x
-    integer getN(integer n) begin
-		result n
+    integer getN(integer n2) begin
+		result n2
     end
 	if n <= 1 then printInt(1) result getN(1) fi
 	x = fib(n-1) + fib(n-2)
