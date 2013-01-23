@@ -16,7 +16,7 @@ number := 0
 loop
 	if !(number <= 100) then exit fi
 	put number
-	number = number + 2
+	number := number + 2
 pool
 
 % Loop with 'exit when'
@@ -24,7 +24,7 @@ number := 0
 loop
 	exit when !(number <= 100)
 	put number
-	number = number + 2
+	number := number + 2
 pool
 
 % Loop with multilevel exit: 'exit n'
