@@ -14,8 +14,7 @@ begin % main program
 %  Returns fib number n (and prints intermediate results,
 %  possibly out of order)
 integer fib(integer n) begin
-        if n < 1 then put "Enter an integer greater than 0" return fi
-	integer x
+        integer x
 	forward printInt
 	if n <= 1 then result n fi
 	x = fib(n-1) + fib(n-2)
