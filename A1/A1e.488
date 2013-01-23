@@ -48,11 +48,11 @@ end
 
 % Recursive function without arguments
 %  Waits for an input of 6 and then returns 6
-integer waitForSize() begin
+integer waitForSix() begin
 	integer x
 	get x
 	if x = 6 then result 6 fi
-	result waitForSize()
+	result waitForSix()
 end
 
 fib(10)
