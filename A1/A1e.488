@@ -10,12 +10,13 @@
 
 begin % main program
 
+forward proc printInt(integer x)
+
 % Recursive function with arguments and forward declaration
 %  Returns fib number n (and prints intermediate results,
 %  possibly out of order)
 integer fib(integer n) begin
-        integer x
-	forward printInt
+    integer x
 	if n <= 1 then result n fi
 	x = fib(n-1) + fib(n-2)
 	printInt(x) 
@@ -55,9 +56,9 @@ integer waitForSix() begin
 	result waitForSix()
 end
 
-fib(10)
+put fib(10)
 printFib(10)
 waitForFive()
-waitForSize()
+put waitForSix()
 
 end % main program
