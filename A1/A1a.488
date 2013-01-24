@@ -31,69 +31,69 @@ put d % expect '-1'
 % Expect only 'true' to be printed
 % Seeing a 'false' is bad!
 if (3 = 3) then
-	put true
+	put "true "
 else
-	put false
+	put "false "
 fi
 
 if (3 != 4) then
-	put true
+	put "true "
 else
-	put false
+	put "false "
 fi
 
 if (3 < 4) then
-	put true
+	put "true "
 else
-	put false
+	put "false "
 fi
 
 if (3 <= 4) then
-	put true
+	put "true "
 else
-	put false
+	put "false "
 fi
 
 if (3 > 4) then
-	put false
+	put "false "
 else
-	put true
+	put "true "
 fi
 
 if (3 >= 4) then
-	put false
+	put "false "
 else
-	put true
+	put "true "
 fi
 
 if (true & true) then
-	put true
+	put "true "
 else
-	put false
+	put "false "
 fi
 
 if (true & false) then
-	put false
+	put "false "
 else
-	put true
+	put "true "
 fi
 
 if (true | true) then
-	put true
+	put "true "
 else
-	put false
+	put "false "
 fi
 
 if (true | false) then
-	put true
+	put "true "
 else
-	put false
+	put "false "
 fi
 
 if (false | false) then
-	put false
+	put "false "
 else
-	put true
+	put "true "
 fi
 
 end % main program
